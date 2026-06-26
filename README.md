@@ -21,3 +21,4 @@ This version intentionally does not use a `public/` folder. The site files live 
 - `contact/index.html` = Contact
 - `thank-you/index.html` = Thank you page
 - `assets/` = CSS, JS, and images
+Deployment reset.
