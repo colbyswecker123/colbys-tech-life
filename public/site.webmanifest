@@ -1,9 +1,9 @@
 {
-  "name": "Colby's Tech Life",
+  "name": "Colby’s Tech Life",
   "short_name": "Tech Life",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#061326",
-  "theme_color": "#061326",
-  "icons": []
+  "background_color": "#040914",
+  "theme_color": "#061426",
+  "description": "Websites, automation, data/reporting help, troubleshooting, and practical tech support."
 }

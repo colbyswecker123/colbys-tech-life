@@ -1,37 +1,102 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | Colby's Tech Life</title>
-  <meta name="description" content="Request help or a quote from Colby's Tech Life for websites, automation, data/reporting, and tech support.">
-  <meta name="theme-color" content="#061326"><meta property="og:title" content="Contact | Colby's Tech Life"><meta property="og:description" content="Request help or a quote for websites, automation, data/reporting, or tech support."><meta property="og:type" content="website"><meta property="og:url" content="https://colbys-tech-life.pages.dev/contact.html"><meta property="og:image" content="https://colbys-tech-life.pages.dev/assets/img/social-preview.jpg">
-  <link rel="icon" href="assets/img/brand-mark.svg" type="image/svg+xml"><link rel="manifest" href="site.webmanifest"><link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Colby’s Tech Life</title>
+  <meta name="description" content="Request help or a quote from Colby’s Tech Life for websites, automation, data/reporting, troubleshooting, and digital support.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://colbys-tech-life.pages.dev/contact.html">
+  <meta property="og:title" content="Contact | Colby’s Tech Life">
+  <meta property="og:description" content="Request help or a quote from Colby’s Tech Life for websites, automation, data/reporting, troubleshooting, and digital support.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://colbys-tech-life.pages.dev/">
+  <meta property="og:image" content="https://colbys-tech-life.pages.dev/assets/img/social-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#061426">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/img/ctl-power-logo-small.png" as="image">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body class="contact">
 <a class="skip-link" href="#main">Skip to main content</a>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="assets/img/brand-mark.svg" alt="" width="44" height="44"><span>Colby's Tech Life</span></a><nav class="nav-links" data-nav-links aria-label="Main navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a class="active" href="contact.html">Contact</a></nav><div class="nav-actions"><a class="btn btn-primary" href="contact.html">Request Help</a><button class="menu-toggle" type="button" data-menu-button aria-label="Open menu" aria-expanded="false">☰</button></div></div></header>
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Colby’s Tech Life home">
+      <img src="assets/img/ctl-power-logo-small.png" alt="" class="brand-logo" width="46" height="46">
+      <span class="brand-text"><strong>Colby’s Tech Life</strong><small>Websites • Automation • Support</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+      <span></span><span></span><span></span><span class="sr-only">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" data-site-nav aria-label="Primary navigation">
+      <a class="nav-link " href="index.html">Home</a><a class="nav-link " href="services.html">Services</a><a class="nav-link " href="about.html">About</a><a class="nav-link " href="faq.html">FAQ</a><a class="nav-link active" href="contact.html">Contact</a>
+      <a class="btn btn-primary nav-cta" href="contact.html">Request Help</a>
+    </nav>
+  </div>
+</header>
 <main id="main">
-  <section class="page-hero"><div class="container"><p class="eyebrow">Contact</p><h1>Request help or a quote.</h1><p>Describe what you need help with. You do not have to know the exact technical solution yet.</p></div></section>
-  <section class="section"><div class="container contact-grid">
-    <aside class="contact-card"><h2>Contact info</h2><p>Based in Edinburg, TX with remote support available depending on the project.</p><div class="contact-item"><span class="check">☎</span><div><strong>Phone</strong><br><a href="tel:2549647613">254-964-7613</a></div></div><div class="contact-item"><span class="check">@</span><div><strong>Email</strong><br><a href="mailto:colbystechlife@gmail.com">colbystechlife@gmail.com</a></div></div><div class="contact-item"><span class="check">•</span><div><strong>Location</strong><br>Edinburg, TX</div></div><p class="form-note">The form currently sends you to a thank-you page. A backend email notification can be added later with Cloudflare Pages Functions.</p></aside>
-    <form class="form-card" action="thank-you.html" method="get">
-      <div class="form-grid">
-        <div class="form-field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
-        <div class="form-field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-        <div class="form-field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
-        <div class="form-field"><label for="need">What do you need help with?</label><input id="need" name="need" placeholder="Website, report, tech issue, etc." required></div>
-        <div class="form-field"><label for="category">Service category</label><select id="category" name="category" required><option value="">Choose one</option><option>Websites & Online Presence</option><option>Data, Reports & Automation</option><option>Tech Support & Setup</option><option>Small Business Digital Help</option><option>Not sure yet</option></select></div>
-        <div class="form-field"><label for="contact-method">Preferred contact method</label><select id="contact-method" name="contact_method"><option>Email</option><option>Phone call</option><option>Text message</option><option>No preference</option></select></div>
-        <div class="form-field"><label for="timeline">Timeline</label><select id="timeline" name="timeline"><option>Flexible</option><option>As soon as possible</option><option>This week</option><option>This month</option><option>Planning ahead</option></select></div>
-        <div class="form-field"><label for="budget">Budget range</label><select id="budget" name="budget"><option>Not sure yet</option><option>Small one-time fix</option><option>Starter project</option><option>Ongoing support</option></select></div>
-        <div class="form-field full"><label for="message">Message/details</label><textarea id="message" name="message" placeholder="Tell me what is happening, what you want built, or what problem you are trying to solve." required></textarea></div>
-      </div>
-      <p class="form-note">Please do not send passwords, private account details, or sensitive information through this form.</p>
-      <div class="hero-actions"><button class="btn btn-primary" type="submit">Submit Request</button><a class="btn btn-light" href="services.html">Review Services</a></div>
+
+<section class="page-hero compact">
+  <div class="container page-hero-inner reveal">
+    <p class="eyebrow"><span></span> Contact</p>
+    <h1>Request help or ask for a quote.</h1>
+    <p>Share what you need help with and I’ll follow up with the best next step. The form is ready for a future Cloudflare Function, but currently redirects to a thank-you page.</p>
+  </div>
+</section>
+<section class="section contact-section">
+  <div class="container contact-grid">
+    <form class="contact-form reveal" action="thank-you.html" method="get" data-contact-form>
+      <div class="form-row two"><label>Name <input required type="text" name="name" autocomplete="name" placeholder="Your name"></label><label>Email <input required type="email" name="email" autocomplete="email" placeholder="you@example.com"></label></div>
+      <div class="form-row two"><label>Phone <input type="tel" name="phone" autocomplete="tel" placeholder="Best phone number"></label><label>Service category <select name="category" required><option value="">Choose one</option><option>Website setup or updates</option><option>Domain or Cloudflare help</option><option>Data, reports, or spreadsheets</option><option>Automation or workflow help</option><option>Computer/device troubleshooting</option><option>General tech support</option><option>Not sure yet</option></select></label></div>
+      <div class="form-row two"><label>Preferred contact method <select name="contact-method" required><option value="">Choose one</option><option>Email</option><option>Phone call</option><option>Text message</option></select></label><label>Timeline <select name="timeline" required><option value="">Choose one</option><option>As soon as possible</option><option>This week</option><option>This month</option><option>Flexible / planning ahead</option></select></label></div>
+      <label>What do you need help with? <input required type="text" name="need" placeholder="Example: I need a website for my small business"></label>
+      <label>Message/details <textarea required name="message" rows="7" placeholder="Tell me what you have now, what you want to accomplish, and anything that feels confusing or broken."></textarea></label>
+      <button class="btn btn-primary" type="submit">Send Request</button>
+      <p class="form-note">This starter form does not email yet. After the design is final, it can be connected to Cloudflare Functions or another form/email service.</p>
     </form>
-  </div></section>
+    <aside class="contact-aside reveal delay-1">
+      <div class="aside-card logo-card"><img src="assets/img/ctl-power-logo.png" alt="Colby’s Tech Life logo"></div>
+      <div class="aside-card"><h2>Direct contact</h2><ul class="contact-methods"><li><strong>Phone</strong><a href="tel:+12549647613">254-964-7613</a></li><li><strong>Email</strong><a href="mailto:colbystechlife@gmail.com">colbystechlife@gmail.com</a></li><li><strong>Location</strong><span>Edinburg, TX and remote support</span></li></ul></div>
+      <div class="aside-card"><h2>Good details to include</h2><p>What you need, what is not working, your timeline, and whether this is for a home, side business, business, church, nonprofit, or local organization.</p></div>
+    </aside>
+  </div>
+</section>
+
 </main>
-<footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand" href="index.html"><img src="assets/img/brand-mark.svg" alt=""><span>Colby's Tech Life</span></a><p>Practical tech help for websites, automation, data/reporting, and everyday digital support.</p></div><div><h3>Pages</h3><div class="footer-links"><a href="services.html">Services</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div></div><div><h3>Contact</h3><div class="footer-links"><a href="tel:2549647613">254-964-7613</a><a href="mailto:colbystechlife@gmail.com">colbystechlife@gmail.com</a><span>Edinburg, TX</span></div></div></div><div class="container footer-bottom"><span>© <span data-year></span> Colby's Tech Life. All rights reserved.</span><span>Built for Cloudflare Pages.</span></div></footer>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand footer-logo" href="index.html" aria-label="Colby’s Tech Life home">
+        <img src="assets/img/ctl-power-logo-small.png" alt="" class="brand-logo" width="48" height="48">
+        <span class="brand-text"><strong>Colby’s Tech Life</strong><small>Practical tech help for real life.</small></span>
+      </a>
+      <p>Clean websites, practical automation, data/reporting help, and everyday tech support for people and small organizations.</p>
+    </div>
+    <div>
+      <h2 class="footer-title">Explore</h2>
+      <ul class="footer-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Colby</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Request Help</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-title">Contact</h2>
+      <ul class="footer-links contact-list">
+        <li><a href="tel:+12549647613">254-964-7613</a></li>
+        <li><a href="mailto:colbystechlife@gmail.com">colbystechlife@gmail.com</a></li>
+        <li>Edinburg, TX and remote support</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-year></span> Colby’s Tech Life. All rights reserved.</p>
+    <p>Built for fast, privacy-friendly Cloudflare Pages hosting.</p>
+  </div>
+</footer>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

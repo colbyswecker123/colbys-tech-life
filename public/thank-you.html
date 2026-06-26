@@ -1,18 +1,86 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thank You | Colby's Tech Life</title>
-  <meta name="description" content="Thank you for contacting Colby's Tech Life."><meta name="robots" content="noindex"><meta name="theme-color" content="#061326">
-  <link rel="icon" href="assets/img/brand-mark.svg" type="image/svg+xml"><link rel="manifest" href="site.webmanifest"><link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You | Colby’s Tech Life</title>
+  <meta name="description" content="Thank you for contacting Colby’s Tech Life.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://colbys-tech-life.pages.dev/contact.html">
+  <meta property="og:title" content="Thank You | Colby’s Tech Life">
+  <meta property="og:description" content="Thank you for contacting Colby’s Tech Life.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://colbys-tech-life.pages.dev/">
+  <meta property="og:image" content="https://colbys-tech-life.pages.dev/assets/img/social-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#061426">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/img/ctl-power-logo-small.png" as="image">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body class="thank">
 <a class="skip-link" href="#main">Skip to main content</a>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><img src="assets/img/brand-mark.svg" alt="" width="44" height="44"><span>Colby's Tech Life</span></a><nav class="nav-links" data-nav-links aria-label="Main navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav><div class="nav-actions"><a class="btn btn-primary" href="contact.html">Request Help</a><button class="menu-toggle" type="button" data-menu-button aria-label="Open menu" aria-expanded="false">☰</button></div></div></header>
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Colby’s Tech Life home">
+      <img src="assets/img/ctl-power-logo-small.png" alt="" class="brand-logo" width="46" height="46">
+      <span class="brand-text"><strong>Colby’s Tech Life</strong><small>Websites • Automation • Support</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+      <span></span><span></span><span></span><span class="sr-only">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" data-site-nav aria-label="Primary navigation">
+      <a class="nav-link " href="index.html">Home</a><a class="nav-link " href="services.html">Services</a><a class="nav-link " href="about.html">About</a><a class="nav-link " href="faq.html">FAQ</a><a class="nav-link active" href="contact.html">Contact</a>
+      <a class="btn btn-primary nav-cta" href="contact.html">Request Help</a>
+    </nav>
+  </div>
+</header>
 <main id="main">
-  <section class="hero"><div class="container hero-grid"><div><p class="eyebrow">Request received</p><h1>Thank you.</h1><p class="hero-text">Your request flow is working. Once email handling is connected, this page can confirm that your message was sent successfully.</p><div class="hero-actions"><a class="btn btn-primary" href="index.html">Back Home</a><a class="btn btn-secondary" href="services.html">View Services</a></div></div><aside class="hero-panel"><img src="assets/img/official-logo.png" alt="Colby's Tech Life official logo"></aside></div></section>
+
+<section class="page-hero compact thank-hero">
+  <div class="container page-hero-inner center reveal">
+    <img src="assets/img/ctl-power-logo.png" alt="Colby’s Tech Life logo" class="thank-logo">
+    <p class="eyebrow center"><span></span> Request received</p>
+    <h1>Thank you. I’ll review your request.</h1>
+    <p>Your message flow is working. Once the form is connected to an email service or Cloudflare Function, requests will be delivered automatically.</p>
+    <div class="hero-actions center-actions"><a class="btn btn-primary" href="index.html">Back Home</a><a class="btn btn-ghost" href="services.html">View Services</a></div>
+  </div>
+</section>
+
 </main>
-<footer class="site-footer"><div class="container footer-grid"><div><a class="footer-brand" href="index.html"><img src="assets/img/brand-mark.svg" alt=""><span>Colby's Tech Life</span></a><p>Practical tech help for websites, automation, data/reporting, and everyday digital support.</p></div><div><h3>Pages</h3><div class="footer-links"><a href="services.html">Services</a><a href="about.html">About</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div></div><div><h3>Contact</h3><div class="footer-links"><a href="tel:2549647613">254-964-7613</a><a href="mailto:colbystechlife@gmail.com">colbystechlife@gmail.com</a><span>Edinburg, TX</span></div></div></div><div class="container footer-bottom"><span>© <span data-year></span> Colby's Tech Life. All rights reserved.</span><span>Built for Cloudflare Pages.</span></div></footer>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand footer-logo" href="index.html" aria-label="Colby’s Tech Life home">
+        <img src="assets/img/ctl-power-logo-small.png" alt="" class="brand-logo" width="48" height="48">
+        <span class="brand-text"><strong>Colby’s Tech Life</strong><small>Practical tech help for real life.</small></span>
+      </a>
+      <p>Clean websites, practical automation, data/reporting help, and everyday tech support for people and small organizations.</p>
+    </div>
+    <div>
+      <h2 class="footer-title">Explore</h2>
+      <ul class="footer-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Colby</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Request Help</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-title">Contact</h2>
+      <ul class="footer-links contact-list">
+        <li><a href="tel:+12549647613">254-964-7613</a></li>
+        <li><a href="mailto:colbystechlife@gmail.com">colbystechlife@gmail.com</a></li>
+        <li>Edinburg, TX and remote support</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span data-year></span> Colby’s Tech Life. All rights reserved.</p>
+    <p>Built for fast, privacy-friendly Cloudflare Pages hosting.</p>
+  </div>
+</footer>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
