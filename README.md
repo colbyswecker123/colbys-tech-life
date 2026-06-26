@@ -1,31 +1,21 @@
-# Colby’s Tech Life Website
+# Colby's Tech Life
 
-A clean, professional, static website for Colby’s Tech Life.
+Professional static website for Colby's Tech Life.
 
 ## Folder structure
 
 ```text
-public/
-  index.html
-  services.html
-  about.html
-  faq.html
-  contact.html
-  thank-you.html
-  404.html
-  assets/
-    css/styles.css
-    js/main.js
-    img/
-functions/
-README.md
-package.json
-wrangler.toml
+public/              Website files deployed by Cloudflare Pages
+functions/           Cloudflare Pages Functions for future backend features
+package.json         Local preview helper
+wrangler.toml        Cloudflare Pages output folder setting
 ```
 
 ## Cloudflare Pages settings
 
-Use the same project you already connected to GitHub.
+Keep the existing Cloudflare Pages project. Do not create a new one.
+
+Use these build settings:
 
 ```text
 Framework preset: None
@@ -34,12 +24,21 @@ Build output directory: public
 Root directory: leave blank
 ```
 
-## How to update the live website
+## Update the live site through GitHub
 
-1. Download and extract this package.
-2. Go to your GitHub repo: `colbyswecker123/colbys-tech-life`.
-3. Upload/replace the project files so the repo root contains `public`, `functions`, `README.md`, `package.json`, and `wrangler.toml`.
-4. Commit the changes.
+1. Unzip this package.
+2. Go to the GitHub repository connected to Cloudflare Pages.
+3. Upload/replace these top-level items:
+
+```text
+public
+functions
+README.md
+package.json
+wrangler.toml
+```
+
+4. Commit changes.
 5. Cloudflare Pages will redeploy automatically.
 
 ## Local preview
@@ -56,21 +55,48 @@ Then open:
 http://localhost:8000
 ```
 
-## Contact form status
+## Contact form email delivery
 
-The contact form is front-end only right now. It redirects to `thank-you.html` and can later be connected to Cloudflare Pages Functions or an email service.
+The contact form UI is complete and points to:
 
-## Domain notes
+```text
+/api/contact
+```
 
-Current temporary URL:
+The Cloudflare Pages Function is included at:
+
+```text
+functions/api/contact.js
+```
+
+To activate email delivery later, add these environment variables in Cloudflare Pages:
+
+```text
+RESEND_API_KEY
+CONTACT_TO
+CONTACT_FROM
+```
+
+Until those are connected, the contact form will display a message asking visitors to email directly.
+
+## After buying a custom domain
+
+After connecting `colbystechlife.com`, update these files from the temporary pages.dev URL to the final domain:
+
+```text
+public/sitemap.xml
+public/robots.txt
+HTML canonical URLs and Open Graph URLs
+```
+
+Search for:
 
 ```text
 https://colbys-tech-life.pages.dev
 ```
 
-After buying a custom domain, update:
+Replace with:
 
-- Canonical URLs in each HTML page
-- `sitemap.xml`
-- `robots.txt`
-- Open Graph image URLs if desired
+```text
+https://colbystechlife.com
+```

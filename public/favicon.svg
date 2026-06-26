@@ -1,6 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="16" fill="#040914"/>
-  <path d="M43 15a21 21 0 1 0 0 34" fill="none" stroke="#0a84ff" stroke-width="9" stroke-linecap="round"/>
-  <path d="M32 10v18" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
-  <path d="M17 48a21 21 0 0 1 0-32" fill="none" stroke="#19e6ff" stroke-width="2" opacity=".8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="g" x1="18" x2="108" y1="106" y2="22" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#005cff"/>
+      <stop offset="1" stop-color="#21e6ff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="26" fill="#040b1d"/>
+  <path d="M91 38a42 42 0 1 0 1 52" fill="none" stroke="url(#g)" stroke-width="18" stroke-linecap="butt" filter="url(#glow)"/>
+  <path d="M64 18v38" stroke="#fff" stroke-width="16" stroke-linecap="round" filter="url(#glow)"/>
 </svg>

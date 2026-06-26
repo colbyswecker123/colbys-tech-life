@@ -1,7 +1,15 @@
-# Future Cloudflare Pages Functions
-This folder is included so the site is ready for future backend features.
-Possible next upgrades:
-- Send contact form submissions to email
-- Store quote requests
-- Add an admin request dashboard
-- Add spam protection or turnstile verification
+# Cloudflare Pages Functions
+
+This folder includes a starter contact form endpoint:
+
+`POST /api/contact`
+
+The function is ready to send email through Resend after environment variables are added in Cloudflare Pages.
+
+Required environment variables:
+
+- `RESEND_API_KEY`
+- `CONTACT_TO`
+- `CONTACT_FROM`
+
+Until those are configured, the contact page will show a message asking visitors to email directly.
