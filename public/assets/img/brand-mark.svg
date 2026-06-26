@@ -1,26 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
-  <title id="title">Colby's Tech Life power C logo</title>
-  <desc id="desc">A glowing blue C shaped power symbol on a dark navy background.</desc>
-  <defs>
-    <linearGradient id="blue" x1="20" y1="15" x2="100" y2="105" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#00d7ff"/>
-      <stop offset=".48" stop-color="#008cff"/>
-      <stop offset="1" stop-color="#0057ff"/>
-    </linearGradient>
-    <radialGradient id="bg" cx="50%" cy="42%" r="64%">
-      <stop offset="0" stop-color="#0b2347"/>
-      <stop offset="1" stop-color="#020817"/>
-    </radialGradient>
-    <filter id="glow" x="-45%" y="-45%" width="190%" height="190%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  <rect x="8" y="8" width="104" height="104" rx="28" fill="url(#bg)"/>
-  <path d="M92 39a43 43 0 1 0 0 42" fill="none" stroke="url(#blue)" stroke-width="17" stroke-linecap="butt" filter="url(#glow)"/>
-  <rect x="54" y="20" width="18" height="48" rx="9" fill="#fff" filter="url(#glow)"/>
-  <path d="M20 96h80" stroke="#0057ff" stroke-opacity=".42" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+<title>Colby's Tech Life brand mark</title>
+<desc>Electric blue power symbol shaped like a C</desc>
+<defs>
+<linearGradient id="g" x1="12" x2="84" y1="80" y2="16" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00d8ff"/>
+<stop offset=".48" stop-color="#1687ff"/>
+<stop offset="1" stop-color="#004cff"/>
+</linearGradient>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+<feGaussianBlur stdDeviation="3" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+<rect width="96" height="96" rx="22" fill="#071225"/>
+<path d="M68.7 24.1A31 31 0 1 0 68.7 72" fill="none" stroke="url(#g)" stroke-width="15" stroke-linecap="round" filter="url(#glow)"/>
+<path d="M48 12v30" fill="none" stroke="#f8fbff" stroke-width="12" stroke-linecap="round" filter="url(#glow)"/>
+<path d="M73 29l7-7" fill="none" stroke="#00d8ff" stroke-width="6" stroke-linecap="round" opacity=".95"/>
 </svg>

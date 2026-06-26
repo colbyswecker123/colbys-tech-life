@@ -1,39 +1,18 @@
-const menuToggle = document.querySelector('[data-menu-toggle]');
-const primaryNav = document.querySelector('[data-primary-nav]');
-if (menuToggle && primaryNav) {
-  menuToggle.addEventListener('click', () => {
-    const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
-    menuToggle.setAttribute('aria-expanded', String(!isOpen));
-    primaryNav.classList.toggle('is-open', !isOpen);
-  });
-  primaryNav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      menuToggle.setAttribute('aria-expanded', 'false');
-      primaryNav.classList.remove('is-open');
-    });
+const menuButton = document.querySelector('[data-menu-button]');
+const navLinks = document.querySelector('[data-nav-links]');
+if (menuButton && navLinks) {
+  menuButton.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(open));
+    menuButton.textContent = open ? '×' : '☰';
   });
 }
-const yearEl = document.querySelector('[data-year]');
-if (yearEl) {
-  yearEl.textContent = new Date().getFullYear();
-}
-const contactForm = document.querySelector('[data-contact-form]');
-if (contactForm) {
-  contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const formData = new FormData(contactForm);
-    const name = String(formData.get('name') || '').trim();
-    if (name) {
-      sessionStorage.setItem('ctlContactName', name);
-    }
-    window.location.href = 'thank-you.html';
+document.querySelectorAll('[data-faq-button]').forEach((button) => {
+  button.addEventListener('click', () => {
+    const item = button.closest('.faq-item');
+    const isOpen = item.classList.toggle('open');
+    button.setAttribute('aria-expanded', String(isOpen));
   });
-}
-const thankYouName = document.querySelector('[data-thank-you-name]');
-if (thankYouName) {
-  const savedName = sessionStorage.getItem('ctlContactName');
-  if (savedName) {
-    thankYouName.textContent = `Thanks, ${savedName}.`;
-    sessionStorage.removeItem('ctlContactName');
-  }
-}
+});
+const year = document.querySelector('[data-year]');
+if (year) year.textContent = new Date().getFullYear();
