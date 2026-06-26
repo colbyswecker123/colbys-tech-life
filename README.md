@@ -29,3 +29,13 @@ Upload these top-level items to GitHub:
 - wrangler.toml
 
 Commit message suggestion: `Simplify homepage and fix buttons`
+
+
+## Routing fix
+This version removes the catch-all `/* /404.html 404` rule from `public/_redirects` because it can cause Cloudflare Pages to send normal subpages to the 404 page. The remaining redirect rules only support clean URLs such as `/services` -> `/services.html`.
+
+Cloudflare Pages settings:
+- Framework preset: None
+- Build command: exit 0
+- Build output directory: public
+- Root directory: .
