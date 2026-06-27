@@ -1,0 +1,11 @@
+Add this to the _headers file on each site you want to embed on colbystechlife.com:
+
+/*
+  Content-Security-Policy: frame-ancestors 'self' https://colbystechlife.com https://www.colbystechlife.com;
+
+Remove these if they exist:
+
+X-Frame-Options: DENY
+X-Frame-Options: SAMEORIGIN
+
+Then redeploy the embedded site on Cloudflare Pages.
