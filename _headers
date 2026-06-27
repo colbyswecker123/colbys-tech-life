@@ -3,7 +3,7 @@
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; font-src 'self' data:; form-action 'self'; base-uri 'self'
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-src https://magneticgems.com https://www.magneticgems.com https://understandingtrauma.org https://www.understandingtrauma.org https://sweckersembroidery.com https://www.sweckersembroidery.com; font-src 'self' data:; form-action 'self'; base-uri 'self'
 /assets/img/*
   Cache-Control: public, max-age=31536000, immutable
 /assets/css/*
